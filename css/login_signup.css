@@ -1,0 +1,230 @@
+body{
+	background-color: #fafafa;
+}
+
+.spinner-1:before{
+	content:"";
+	box-sizing: border-box;
+	position: absolute;
+	top:50%;
+	left:50%;
+	height: 40px;
+	width: 40px;
+	margin-top: -20px;
+	margin-left: -20px;
+	border-radius: 50%;
+	border:4px solid lightgray;
+	border-top:4px solid coral;
+	animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin{
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+/*Nav Bar*/
+
+.login_signup_page{
+	display: none;
+}
+
+nav{
+	background-color: black;
+}
+
+nav a{
+	color: white;
+}
+
+nav a:hover{
+	color: white;
+}
+
+nav .title{
+	color: white;
+	font-family:  'Dancing Script', cursive;
+}
+
+nav .title:hover{
+	color: white;
+}
+
+
+
+/*Main section*/
+
+section{
+	margin:50px 80px 25px;
+}
+
+/*Left Section */
+
+.carousel{
+	width: 90%;
+	height: 350px;
+	text-align: center;
+	overflow: hidden;
+	transform:translateY(60px);
+}
+
+.custom_height{
+	width: 100%;
+}
+
+/* start right section*/
+
+.custom_right_section{
+	padding:25px 50px;
+	background: #eee;
+}
+
+.form_header{
+	text-align: center;
+}
+
+.form_header h1{
+	font-size:2.9rem; 
+	font-family: 'Dancing Script', cursive;
+}
+
+.form_header p{
+	color: #626263;
+	font-size:1.2rem;
+	font-family: 'Courgette', cursive;
+}
+
+.custom_form_container{
+	height: 310px;
+	overflow: hidden;
+	transition: 1s ease;
+	transition-delay: 0.1s; 
+}
+
+.custom_signup_container{
+	transition: 1s ease;
+}
+
+.custom_login_container{
+	transition: 1s ease;
+}
+
+.floating_label{
+	color: #9b9999;
+	font-size: 0.9rem;
+	position: absolute;
+	transform: translate(12px,-30px);
+	pointer-events: none;
+	transition: 0.2s linear;
+}
+
+.custom_input ,.custom_input:focus{
+	color: #626263;
+	font-size: 0.8rem;
+	padding-top:15px;
+	padding-bottom: 2px;
+	padding-right: 27px;
+}
+
+.custom_input:focus{
+	box-shadow: none;
+	border-color: #626263;
+}
+
+.custom_input:focus ~ .floating_label,.custom_input:not(:focus):valid ~ .floating_label{
+	font-size: 0.7rem;
+	transform: translate(12px,-38px);
+}
+
+.signup_btn:focus,.login_btn:focus {
+	background: #007fff;
+	box-shadow: none;
+	color: white;
+}
+
+.change_to_login:focus,.change_to_signup:focus {
+	background: #c82333;
+	box-shadow: none;
+	color: white;
+}
+
+.wrong_input{
+	color: #c82333;
+	position: absolute;
+	font-size: 1.3rem;
+	transform: translate(281px,-35px);
+	display: none;
+}
+
+.right_input{
+	color: #5ba55b;
+	position: absolute;
+	font-size: 1.3rem;
+	transform: translate(281px,-35px);
+	display: none;
+}
+
+.signup_errors{
+	color: #c82333;
+	font-size: 0.8rem;
+	padding: 0 30px;
+	display: none;
+}
+
+.login_errors{
+	color: #c82333;
+	font-size: 0.8rem;
+	padding: 0 30px;
+	display: none;
+}
+
+.terms_policy{
+	margin-top:10px;  
+	color: #9b9999;
+	text-align: center;
+}
+
+.terms_policy a{
+	cursor: pointer;
+	color: #626263; 
+}
+
+.terms_policy a:hover{
+	text-decoration: none;
+}
+
+.forgot_password{
+	display: none;
+}
+
+/*get app*/
+.get_app{
+	margin-top:15px;
+	text-align: center;
+}
+
+.btn_image{
+	height: 45px;
+}
+
+/*footer*/
+
+footer{
+	margin-top:0;
+	width: 100%;
+	height: 50px;
+	text-align:center;
+}
+
+footer a{
+	color:#626263;
+	font-family: 'Philosopher', sans-serif; 
+}
+
+footer a:hover{
+	
+	color: #626263;
+	text-decoration: none;
+}
+

@@ -9,8 +9,8 @@
 		protected $pdo;
 
 		function __construct(){
-			$this->db_user = "YOUR USER";
-			$this->db_pass = "YOUR PASSWORD";
+			$this->db_user = "YOUR USER";  // database username
+			$this->db_pass = "YOUR PASSWORD"; // database password
 			$this->db_host = "localhost";
 			$this->db_name = "babble";
 			$this->charset = "utf8mb4";

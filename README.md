@@ -1,4 +1,5 @@
-/*Requirement*/
+/* Requirement */
+
 FFmpeg should be installed (to create the thumbnail of video posts)
 
 xampp
